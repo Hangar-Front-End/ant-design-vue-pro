@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-03-10 08:47:12
- * @LastEditTime: 2022-03-15 10:10:46
+ * @LastEditTime: 2022-04-20 13:46:17
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \sqm\src\router\index.js
@@ -20,6 +20,7 @@ Router.prototype.push = function push(location, onResolve, onReject) {
 Vue.use(Router);
 
 export default new Router({
+  base: process.env.VUE_APP_BASE_URL || '/',
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap

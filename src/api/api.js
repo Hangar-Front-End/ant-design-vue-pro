@@ -48,7 +48,7 @@ export const request = (method, url, body, queryParameters, form, config) => {
 export const listGatewayRoutes = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/gateway-routes'
+  let path = '/gateway-management/api/gateway-routes'
   let body
   let queryParameters = {}
   let form = {}
@@ -87,7 +87,7 @@ export const listGatewayRoutes = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listGatewayRoutes_RAW_URL = function() {
-  return '/gateway/api/gateway-routes'
+  return '/gateway-management/api/gateway-routes'
 }
 export const listGatewayRoutes_TYPE = function() {
   return 'get'
@@ -95,7 +95,7 @@ export const listGatewayRoutes_TYPE = function() {
 export const listGatewayRoutesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/gateway-routes'
+  let path = '/gateway-management/api/gateway-routes'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -142,7 +142,7 @@ export const listGatewayRoutesURL = function(parameters = {}) {
 export const createGatewayRoute = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/gateway-routes'
+  let path = '/gateway-management/api/gateway-routes'
   let body
   let queryParameters = {}
   let form = {}
@@ -157,7 +157,7 @@ export const createGatewayRoute = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createGatewayRoute_RAW_URL = function() {
-  return '/gateway/api/gateway-routes'
+  return '/gateway-management/api/gateway-routes'
 }
 export const createGatewayRoute_TYPE = function() {
   return 'post'
@@ -165,7 +165,7 @@ export const createGatewayRoute_TYPE = function() {
 export const createGatewayRouteURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/gateway-routes'
+  let path = '/gateway-management/api/gateway-routes'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -185,7 +185,7 @@ export const createGatewayRouteURL = function(parameters = {}) {
 export const loadGatewayRouteById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/gateway-routes/{id}'
+  let path = '/gateway-management/api/gateway-routes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -201,7 +201,7 @@ export const loadGatewayRouteById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadGatewayRouteById_RAW_URL = function() {
-  return '/gateway/api/gateway-routes/{id}'
+  return '/gateway-management/api/gateway-routes/{id}'
 }
 export const loadGatewayRouteById_TYPE = function() {
   return 'get'
@@ -209,7 +209,7 @@ export const loadGatewayRouteById_TYPE = function() {
 export const loadGatewayRouteByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/gateway-routes/{id}'
+  let path = '/gateway-management/api/gateway-routes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -231,7 +231,7 @@ export const loadGatewayRouteByIdURL = function(parameters = {}) {
 export const updateGatewayRoute = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/gateway-routes/{id}'
+  let path = '/gateway-management/api/gateway-routes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -250,7 +250,7 @@ export const updateGatewayRoute = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateGatewayRoute_RAW_URL = function() {
-  return '/gateway/api/gateway-routes/{id}'
+  return '/gateway-management/api/gateway-routes/{id}'
 }
 export const updateGatewayRoute_TYPE = function() {
   return 'put'
@@ -258,7 +258,7 @@ export const updateGatewayRoute_TYPE = function() {
 export const updateGatewayRouteURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/gateway-routes/{id}'
+  let path = '/gateway-management/api/gateway-routes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -279,7 +279,7 @@ export const updateGatewayRouteURL = function(parameters = {}) {
 export const deleteGatewayRouteById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/gateway-routes/{id}'
+  let path = '/gateway-management/api/gateway-routes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -295,7 +295,7 @@ export const deleteGatewayRouteById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteGatewayRouteById_RAW_URL = function() {
-  return '/gateway/api/gateway-routes/{id}'
+  return '/gateway-management/api/gateway-routes/{id}'
 }
 export const deleteGatewayRouteById_TYPE = function() {
   return 'delete'
@@ -303,7 +303,7 @@ export const deleteGatewayRouteById_TYPE = function() {
 export const deleteGatewayRouteByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/gateway-routes/{id}'
+  let path = '/gateway-management/api/gateway-routes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -339,7 +339,7 @@ parent.name,sortIndex,isEnable,createTime
 export const listApis = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces'
+  let path = '/gateway-management/api/interfaces'
   let body
   let queryParameters = {}
   let form = {}
@@ -393,7 +393,7 @@ export const listApis = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApis_RAW_URL = function() {
-  return '/gateway/api/interfaces'
+  return '/gateway-management/api/interfaces'
 }
 export const listApis_TYPE = function() {
   return 'get'
@@ -401,7 +401,7 @@ export const listApis_TYPE = function() {
 export const listApisURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces'
+  let path = '/gateway-management/api/interfaces'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -463,7 +463,7 @@ export const listApisURL = function(parameters = {}) {
 export const createApi = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces'
+  let path = '/gateway-management/api/interfaces'
   let body
   let queryParameters = {}
   let form = {}
@@ -478,7 +478,7 @@ export const createApi = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createApi_RAW_URL = function() {
-  return '/gateway/api/interfaces'
+  return '/gateway-management/api/interfaces'
 }
 export const createApi_TYPE = function() {
   return 'post'
@@ -486,7 +486,7 @@ export const createApi_TYPE = function() {
 export const createApiURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces'
+  let path = '/gateway-management/api/interfaces'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -516,7 +516,7 @@ export const createApiURL = function(parameters = {}) {
 export const apiTree = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces/tree'
+  let path = '/gateway-management/api/interfaces/tree'
   let body
   let queryParameters = {}
   let form = {}
@@ -561,7 +561,7 @@ export const apiTree = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const apiTree_RAW_URL = function() {
-  return '/gateway/api/interfaces/tree'
+  return '/gateway-management/api/interfaces/tree'
 }
 export const apiTree_TYPE = function() {
   return 'get'
@@ -569,7 +569,7 @@ export const apiTree_TYPE = function() {
 export const apiTreeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces/tree'
+  let path = '/gateway-management/api/interfaces/tree'
   if (parameters['searchCode'] !== undefined) {
     queryParameters['search_code'] = parameters['searchCode']
   }
@@ -622,7 +622,7 @@ export const apiTreeURL = function(parameters = {}) {
 export const loadApiById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -638,7 +638,7 @@ export const loadApiById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadApiById_RAW_URL = function() {
-  return '/gateway/api/interfaces/{id}'
+  return '/gateway-management/api/interfaces/{id}'
 }
 export const loadApiById_TYPE = function() {
   return 'get'
@@ -646,7 +646,7 @@ export const loadApiById_TYPE = function() {
 export const loadApiByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -668,7 +668,7 @@ export const loadApiByIdURL = function(parameters = {}) {
 export const updateApi = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -687,7 +687,7 @@ export const updateApi = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateApi_RAW_URL = function() {
-  return '/gateway/api/interfaces/{id}'
+  return '/gateway-management/api/interfaces/{id}'
 }
 export const updateApi_TYPE = function() {
   return 'put'
@@ -695,7 +695,7 @@ export const updateApi_TYPE = function() {
 export const updateApiURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -716,7 +716,7 @@ export const updateApiURL = function(parameters = {}) {
 export const deleteApiById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -732,7 +732,7 @@ export const deleteApiById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteApiById_RAW_URL = function() {
-  return '/gateway/api/interfaces/{id}'
+  return '/gateway-management/api/interfaces/{id}'
 }
 export const deleteApiById_TYPE = function() {
   return 'delete'
@@ -740,7 +740,7 @@ export const deleteApiById_TYPE = function() {
 export const deleteApiByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -762,7 +762,7 @@ export const deleteApiByIdURL = function(parameters = {}) {
 export const updateApiPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -781,7 +781,7 @@ export const updateApiPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateApiPatch_RAW_URL = function() {
-  return '/gateway/api/interfaces/{id}'
+  return '/gateway-management/api/interfaces/{id}'
 }
 export const updateApiPatch_TYPE = function() {
   return 'patch'
@@ -789,7 +789,7 @@ export const updateApiPatch_TYPE = function() {
 export const updateApiPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/interfaces/{id}'
+  let path = '/gateway-management/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -820,7 +820,7 @@ export const updateApiPatchURL = function(parameters = {}) {
 export const listResources = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/resources'
+  let path = '/gateway-management/api/resources'
   let body
   let queryParameters = {}
   let form = {}
@@ -862,7 +862,7 @@ export const listResources = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listResources_RAW_URL = function() {
-  return '/gateway/api/resources'
+  return '/gateway-management/api/resources'
 }
 export const listResources_TYPE = function() {
   return 'get'
@@ -870,7 +870,7 @@ export const listResources_TYPE = function() {
 export const listResourcesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/resources'
+  let path = '/gateway-management/api/resources'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -920,7 +920,7 @@ export const listResourcesURL = function(parameters = {}) {
 export const createResource = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/resources'
+  let path = '/gateway-management/api/resources'
   let body
   let queryParameters = {}
   let form = {}
@@ -935,7 +935,7 @@ export const createResource = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createResource_RAW_URL = function() {
-  return '/gateway/api/resources'
+  return '/gateway-management/api/resources'
 }
 export const createResource_TYPE = function() {
   return 'post'
@@ -943,7 +943,7 @@ export const createResource_TYPE = function() {
 export const createResourceURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/resources'
+  let path = '/gateway-management/api/resources'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -963,7 +963,7 @@ export const createResourceURL = function(parameters = {}) {
 export const loadResourceById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/resources/{id}'
+  let path = '/gateway-management/api/resources/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -979,7 +979,7 @@ export const loadResourceById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadResourceById_RAW_URL = function() {
-  return '/gateway/api/resources/{id}'
+  return '/gateway-management/api/resources/{id}'
 }
 export const loadResourceById_TYPE = function() {
   return 'get'
@@ -987,7 +987,7 @@ export const loadResourceById_TYPE = function() {
 export const loadResourceByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/resources/{id}'
+  let path = '/gateway-management/api/resources/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1009,7 +1009,7 @@ export const loadResourceByIdURL = function(parameters = {}) {
 export const updateResource = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/resources/{id}'
+  let path = '/gateway-management/api/resources/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1028,7 +1028,7 @@ export const updateResource = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateResource_RAW_URL = function() {
-  return '/gateway/api/resources/{id}'
+  return '/gateway-management/api/resources/{id}'
 }
 export const updateResource_TYPE = function() {
   return 'put'
@@ -1036,7 +1036,7 @@ export const updateResource_TYPE = function() {
 export const updateResourceURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/resources/{id}'
+  let path = '/gateway-management/api/resources/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1057,7 +1057,7 @@ export const updateResourceURL = function(parameters = {}) {
 export const deleteResourceById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/gateway/api/resources/{id}'
+  let path = '/gateway-management/api/resources/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1073,7 +1073,7 @@ export const deleteResourceById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteResourceById_RAW_URL = function() {
-  return '/gateway/api/resources/{id}'
+  return '/gateway-management/api/resources/{id}'
 }
 export const deleteResourceById_TYPE = function() {
   return 'delete'
@@ -1081,7 +1081,7 @@ export const deleteResourceById_TYPE = function() {
 export const deleteResourceByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/gateway/api/resources/{id}'
+  let path = '/gateway-management/api/resources/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {

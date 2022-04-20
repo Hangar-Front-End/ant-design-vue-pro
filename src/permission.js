@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-01-06 09:06:29
- * @LastEditTime: 2022-03-15 10:13:16
+ * @LastEditTime: 2022-04-20 14:48:20
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \ceshi\src\permission.js
@@ -74,7 +74,7 @@ router.beforeEach((to, from, next) => {
       // 在免登录名单，直接进入
       next();
     } else {
-      next({ path: loginRoutePath, query: { redirect: to.fullPath } });
+      next({ path: loginRoutePath, query: Object.assign({ redirect: to.fullPath }, to.query) });
       NProgress.done(); // if current page is login will not trigger afterEach hook, so manually handle it
     }
   }

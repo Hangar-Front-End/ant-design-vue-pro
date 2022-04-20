@@ -40,7 +40,7 @@ const assetsCDN = {
 
 // vue.config.js
 const vueConfig = {
-  publicPath: './',
+  publicPath: process.env.VUE_APP_BASE_URL || '/',
   configureWebpack: {
     // webpack plugins
     plugins: [
@@ -116,7 +116,7 @@ const vueConfig = {
         ws: true,
         changeOrigin: true
       },
-      '/unified-identity-server': {
+      '/unified-identity': {
         target: url,
         ws: true,
         changeOrigin: true

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-03-10 08:47:12
- * @LastEditTime: 2022-04-20 10:03:09
+ * @LastEditTime: 2022-04-20 13:47:59
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \sqm\src\api\auth.js
@@ -62,5 +62,5 @@
   * @returns 授权码模式回调地址
   */
  function getRedirectUri() {
-   return process.env.VUE_APP_AUTHORIZATION_REDIRECT_URI || window.location.origin + '/user/login';
+   return process.env.VUE_APP_AUTHORIZATION_REDIRECT_URI || `${window.location.origin}${process.env.VUE_APP_BASE_URL || '/'}`;
  }
