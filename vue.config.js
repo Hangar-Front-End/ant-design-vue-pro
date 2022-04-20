@@ -4,7 +4,6 @@ const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const GitRevision = new GitRevisionPlugin();
 const buildDate = JSON.stringify(new Date().toLocaleString());
 const createThemeColorReplacerPlugin = require('./config/plugin.config');
-const authorizationUrl = 'http://10.10.10.107:9000';
 const url = 'http://10.10.10.107:9000';
 
 function resolve(dir) {
@@ -109,7 +108,7 @@ const vueConfig = {
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
     proxy: {
       '/oauth2': {
-        target: process.env.VUE_APP_AUTHORIZATION_URI || authorizationUrl
+        target: process.env.VUE_APP_AUTHORIZATION_URI
       },
       '/gateway': {
         target: url,
