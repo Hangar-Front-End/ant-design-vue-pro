@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-24 11:28:34
- * @LastEditTime: 2022-03-15 10:17:46
+ * @LastEditTime: 2022-04-20 10:01:27
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \ant-design-vue-pro\src\components\GlobalHeader\AvatarDropdown.vue
@@ -126,7 +126,7 @@ export default {
           return this.$store.dispatch('Logout').then(() => {
             if (this.authorizationGrantType === 'authorization_code') {
               window.location.href =
-                process.env.VUE_APP_AUTHORIZATION_URI + process.env.VUE_APP_AUTHORIZATION_LOGOUT_URL;
+                process.env.VUE_APP_AUTHORIZATION_URI + '/logout';
             } else {
               this.$router.push({ name: 'login' });
             }
