@@ -48,7 +48,7 @@ export const request = (method, url, body, queryParameters, form, config) => {
 export const listApplications = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications'
+  let path = '/unified-identity/api/applications'
   let body
   let queryParameters = {}
   let form = {}
@@ -75,7 +75,7 @@ export const listApplications = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApplications_RAW_URL = function() {
-  return '/unified-identity-server/api/applications'
+  return '/unified-identity/api/applications'
 }
 export const listApplications_TYPE = function() {
   return 'get'
@@ -83,7 +83,7 @@ export const listApplications_TYPE = function() {
 export const listApplicationsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications'
+  let path = '/unified-identity/api/applications'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -118,7 +118,7 @@ export const listApplicationsURL = function(parameters = {}) {
 export const createApplication = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications'
+  let path = '/unified-identity/api/applications'
   let body
   let queryParameters = {}
   let form = {}
@@ -133,7 +133,7 @@ export const createApplication = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createApplication_RAW_URL = function() {
-  return '/unified-identity-server/api/applications'
+  return '/unified-identity/api/applications'
 }
 export const createApplication_TYPE = function() {
   return 'post'
@@ -141,7 +141,7 @@ export const createApplication_TYPE = function() {
 export const createApplicationURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications'
+  let path = '/unified-identity/api/applications'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -163,7 +163,7 @@ export const createApplicationURL = function(parameters = {}) {
 export const listAllApplications = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/all'
+  let path = '/unified-identity/api/applications/all'
   let body
   let queryParameters = {}
   let form = {}
@@ -181,7 +181,7 @@ export const listAllApplications = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listAllApplications_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/all'
+  return '/unified-identity/api/applications/all'
 }
 export const listAllApplications_TYPE = function() {
   return 'get'
@@ -189,7 +189,7 @@ export const listAllApplications_TYPE = function() {
 export const listAllApplicationsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/all'
+  let path = '/unified-identity/api/applications/all'
   if (parameters['searchCode'] !== undefined) {
     queryParameters['search_code'] = parameters['searchCode']
   }
@@ -231,7 +231,7 @@ parent.name,sortIndex,isEnable,createTime
 export const listApplicationPermissions = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/permissions'
+  let path = '/unified-identity/api/applications/permissions'
   let body
   let queryParameters = {}
   let form = {}
@@ -288,7 +288,7 @@ export const listApplicationPermissions = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApplicationPermissions_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/permissions'
+  return '/unified-identity/api/applications/permissions'
 }
 export const listApplicationPermissions_TYPE = function() {
   return 'get'
@@ -296,7 +296,7 @@ export const listApplicationPermissions_TYPE = function() {
 export const listApplicationPermissionsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/permissions'
+  let path = '/unified-identity/api/applications/permissions'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -361,7 +361,7 @@ export const listApplicationPermissionsURL = function(parameters = {}) {
 export const createApplicationPermission = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/permissions'
+  let path = '/unified-identity/api/applications/permissions'
   let body
   let queryParameters = {}
   let form = {}
@@ -376,7 +376,7 @@ export const createApplicationPermission = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createApplicationPermission_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/permissions'
+  return '/unified-identity/api/applications/permissions'
 }
 export const createApplicationPermission_TYPE = function() {
   return 'post'
@@ -384,7 +384,7 @@ export const createApplicationPermission_TYPE = function() {
 export const createApplicationPermissionURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/permissions'
+  let path = '/unified-identity/api/applications/permissions'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -404,7 +404,7 @@ export const createApplicationPermissionURL = function(parameters = {}) {
 export const listApplicationPermissionTree = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/permissions/tree'
+  let path = '/unified-identity/api/applications/permissions/tree'
   let body
   let queryParameters = {}
   let form = {}
@@ -419,7 +419,7 @@ export const listApplicationPermissionTree = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApplicationPermissionTree_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/permissions/tree'
+  return '/unified-identity/api/applications/permissions/tree'
 }
 export const listApplicationPermissionTree_TYPE = function() {
   return 'get'
@@ -427,7 +427,7 @@ export const listApplicationPermissionTree_TYPE = function() {
 export const listApplicationPermissionTreeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/permissions/tree'
+  let path = '/unified-identity/api/applications/permissions/tree'
   if (parameters['searchType'] !== undefined) {
     queryParameters['search_type'] = parameters['searchType']
   }
@@ -450,7 +450,7 @@ export const listApplicationPermissionTreeURL = function(parameters = {}) {
 export const loadApplicationPermissionById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/permissions/{id}'
+  let path = '/unified-identity/api/applications/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -466,7 +466,7 @@ export const loadApplicationPermissionById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadApplicationPermissionById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/permissions/{id}'
+  return '/unified-identity/api/applications/permissions/{id}'
 }
 export const loadApplicationPermissionById_TYPE = function() {
   return 'get'
@@ -474,7 +474,7 @@ export const loadApplicationPermissionById_TYPE = function() {
 export const loadApplicationPermissionByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/permissions/{id}'
+  let path = '/unified-identity/api/applications/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -496,7 +496,7 @@ export const loadApplicationPermissionByIdURL = function(parameters = {}) {
 export const updateApplicationPermission = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/permissions/{id}'
+  let path = '/unified-identity/api/applications/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -515,7 +515,7 @@ export const updateApplicationPermission = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateApplicationPermission_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/permissions/{id}'
+  return '/unified-identity/api/applications/permissions/{id}'
 }
 export const updateApplicationPermission_TYPE = function() {
   return 'put'
@@ -523,7 +523,7 @@ export const updateApplicationPermission_TYPE = function() {
 export const updateApplicationPermissionURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/permissions/{id}'
+  let path = '/unified-identity/api/applications/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -544,7 +544,7 @@ export const updateApplicationPermissionURL = function(parameters = {}) {
 export const deleteApplicationPermissionById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/permissions/{id}'
+  let path = '/unified-identity/api/applications/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -560,7 +560,7 @@ export const deleteApplicationPermissionById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteApplicationPermissionById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/permissions/{id}'
+  return '/unified-identity/api/applications/permissions/{id}'
 }
 export const deleteApplicationPermissionById_TYPE = function() {
   return 'delete'
@@ -568,7 +568,7 @@ export const deleteApplicationPermissionById_TYPE = function() {
 export const deleteApplicationPermissionByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/permissions/{id}'
+  let path = '/unified-identity/api/applications/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -601,7 +601,7 @@ export const deleteApplicationPermissionByIdURL = function(parameters = {}) {
 export const listApplicationRoles = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/roles'
+  let path = '/unified-identity/api/applications/roles'
   let body
   let queryParameters = {}
   let form = {}
@@ -649,7 +649,7 @@ export const listApplicationRoles = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApplicationRoles_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/roles'
+  return '/unified-identity/api/applications/roles'
 }
 export const listApplicationRoles_TYPE = function() {
   return 'get'
@@ -657,7 +657,7 @@ export const listApplicationRoles_TYPE = function() {
 export const listApplicationRolesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/roles'
+  let path = '/unified-identity/api/applications/roles'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -713,7 +713,7 @@ export const listApplicationRolesURL = function(parameters = {}) {
 export const createApplicationRole = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/roles'
+  let path = '/unified-identity/api/applications/roles'
   let body
   let queryParameters = {}
   let form = {}
@@ -728,7 +728,7 @@ export const createApplicationRole = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createApplicationRole_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/roles'
+  return '/unified-identity/api/applications/roles'
 }
 export const createApplicationRole_TYPE = function() {
   return 'post'
@@ -736,7 +736,7 @@ export const createApplicationRole_TYPE = function() {
 export const createApplicationRoleURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/roles'
+  let path = '/unified-identity/api/applications/roles'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -756,7 +756,7 @@ export const createApplicationRoleURL = function(parameters = {}) {
 export const loadApplicationRoleById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/roles/{id}'
+  let path = '/unified-identity/api/applications/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -772,7 +772,7 @@ export const loadApplicationRoleById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadApplicationRoleById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/roles/{id}'
+  return '/unified-identity/api/applications/roles/{id}'
 }
 export const loadApplicationRoleById_TYPE = function() {
   return 'get'
@@ -780,7 +780,7 @@ export const loadApplicationRoleById_TYPE = function() {
 export const loadApplicationRoleByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/roles/{id}'
+  let path = '/unified-identity/api/applications/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -802,7 +802,7 @@ export const loadApplicationRoleByIdURL = function(parameters = {}) {
 export const updateApplicationRole = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/roles/{id}'
+  let path = '/unified-identity/api/applications/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -821,7 +821,7 @@ export const updateApplicationRole = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateApplicationRole_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/roles/{id}'
+  return '/unified-identity/api/applications/roles/{id}'
 }
 export const updateApplicationRole_TYPE = function() {
   return 'put'
@@ -829,7 +829,7 @@ export const updateApplicationRole_TYPE = function() {
 export const updateApplicationRoleURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/roles/{id}'
+  let path = '/unified-identity/api/applications/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -850,7 +850,7 @@ export const updateApplicationRoleURL = function(parameters = {}) {
 export const deleteApplicationRoleById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/roles/{id}'
+  let path = '/unified-identity/api/applications/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -866,7 +866,7 @@ export const deleteApplicationRoleById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteApplicationRoleById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/roles/{id}'
+  return '/unified-identity/api/applications/roles/{id}'
 }
 export const deleteApplicationRoleById_TYPE = function() {
   return 'delete'
@@ -874,7 +874,7 @@ export const deleteApplicationRoleById_TYPE = function() {
 export const deleteApplicationRoleByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/roles/{id}'
+  let path = '/unified-identity/api/applications/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -916,7 +916,7 @@ department.name,isEnable,createTime
 export const listApplicationUsers = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/users'
+  let path = '/unified-identity/api/applications/users'
   let body
   let queryParameters = {}
   let form = {}
@@ -985,7 +985,7 @@ export const listApplicationUsers = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApplicationUsers_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/users'
+  return '/unified-identity/api/applications/users'
 }
 export const listApplicationUsers_TYPE = function() {
   return 'get'
@@ -993,7 +993,7 @@ export const listApplicationUsers_TYPE = function() {
 export const listApplicationUsersURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/users'
+  let path = '/unified-identity/api/applications/users'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -1070,7 +1070,7 @@ export const listApplicationUsersURL = function(parameters = {}) {
 export const loadApplicationUserById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/users/{id}'
+  let path = '/unified-identity/api/applications/users/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1086,7 +1086,7 @@ export const loadApplicationUserById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadApplicationUserById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/users/{id}'
+  return '/unified-identity/api/applications/users/{id}'
 }
 export const loadApplicationUserById_TYPE = function() {
   return 'get'
@@ -1094,7 +1094,7 @@ export const loadApplicationUserById_TYPE = function() {
 export const loadApplicationUserByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/users/{id}'
+  let path = '/unified-identity/api/applications/users/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1116,7 +1116,7 @@ export const loadApplicationUserByIdURL = function(parameters = {}) {
 export const updateApplicationUserRoles = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/users/{id}/update-roles'
+  let path = '/unified-identity/api/applications/users/{id}/update-roles'
   let body
   let queryParameters = {}
   let form = {}
@@ -1138,7 +1138,7 @@ export const updateApplicationUserRoles = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateApplicationUserRoles_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/users/{id}/update-roles'
+  return '/unified-identity/api/applications/users/{id}/update-roles'
 }
 export const updateApplicationUserRoles_TYPE = function() {
   return 'put'
@@ -1146,7 +1146,7 @@ export const updateApplicationUserRoles_TYPE = function() {
 export const updateApplicationUserRolesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/users/{id}/update-roles'
+  let path = '/unified-identity/api/applications/users/{id}/update-roles'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1167,7 +1167,7 @@ export const updateApplicationUserRolesURL = function(parameters = {}) {
 export const loadApplicationById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/{id}'
+  let path = '/unified-identity/api/applications/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1183,7 +1183,7 @@ export const loadApplicationById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadApplicationById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/{id}'
+  return '/unified-identity/api/applications/{id}'
 }
 export const loadApplicationById_TYPE = function() {
   return 'get'
@@ -1191,7 +1191,7 @@ export const loadApplicationById_TYPE = function() {
 export const loadApplicationByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/{id}'
+  let path = '/unified-identity/api/applications/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1213,7 +1213,7 @@ export const loadApplicationByIdURL = function(parameters = {}) {
 export const updateApplication = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/{id}'
+  let path = '/unified-identity/api/applications/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1232,7 +1232,7 @@ export const updateApplication = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateApplication_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/{id}'
+  return '/unified-identity/api/applications/{id}'
 }
 export const updateApplication_TYPE = function() {
   return 'put'
@@ -1240,7 +1240,7 @@ export const updateApplication_TYPE = function() {
 export const updateApplicationURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/{id}'
+  let path = '/unified-identity/api/applications/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1261,7 +1261,7 @@ export const updateApplicationURL = function(parameters = {}) {
 export const deleteApplicationById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/applications/{id}'
+  let path = '/unified-identity/api/applications/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1277,7 +1277,7 @@ export const deleteApplicationById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteApplicationById_RAW_URL = function() {
-  return '/unified-identity-server/api/applications/{id}'
+  return '/unified-identity/api/applications/{id}'
 }
 export const deleteApplicationById_TYPE = function() {
   return 'delete'
@@ -1285,7 +1285,7 @@ export const deleteApplicationById_TYPE = function() {
 export const deleteApplicationByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/applications/{id}'
+  let path = '/unified-identity/api/applications/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1322,7 +1322,7 @@ organization.name,sortIndex,isEnable,createTime,
 export const listDepartments = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments'
+  let path = '/unified-identity/api/departments'
   let body
   let queryParameters = {}
   let form = {}
@@ -1379,7 +1379,7 @@ export const listDepartments = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listDepartments_RAW_URL = function() {
-  return '/unified-identity-server/api/departments'
+  return '/unified-identity/api/departments'
 }
 export const listDepartments_TYPE = function() {
   return 'get'
@@ -1387,7 +1387,7 @@ export const listDepartments_TYPE = function() {
 export const listDepartmentsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments'
+  let path = '/unified-identity/api/departments'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -1452,7 +1452,7 @@ export const listDepartmentsURL = function(parameters = {}) {
 export const createDepartment = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments'
+  let path = '/unified-identity/api/departments'
   let body
   let queryParameters = {}
   let form = {}
@@ -1467,7 +1467,7 @@ export const createDepartment = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createDepartment_RAW_URL = function() {
-  return '/unified-identity-server/api/departments'
+  return '/unified-identity/api/departments'
 }
 export const createDepartment_TYPE = function() {
   return 'post'
@@ -1475,7 +1475,7 @@ export const createDepartment_TYPE = function() {
 export const createDepartmentURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments'
+  let path = '/unified-identity/api/departments'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -1496,7 +1496,7 @@ export const createDepartmentURL = function(parameters = {}) {
 export const departmentsTree = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/tree'
+  let path = '/unified-identity/api/departments/tree'
   let body
   let queryParameters = {}
   let form = {}
@@ -1514,7 +1514,7 @@ export const departmentsTree = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const departmentsTree_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/tree'
+  return '/unified-identity/api/departments/tree'
 }
 export const departmentsTree_TYPE = function() {
   return 'get'
@@ -1522,7 +1522,7 @@ export const departmentsTree_TYPE = function() {
 export const departmentsTreeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/tree'
+  let path = '/unified-identity/api/departments/tree'
   if (parameters['searchName'] !== undefined) {
     queryParameters['search_name'] = parameters['searchName']
   }
@@ -1548,7 +1548,7 @@ export const departmentsTreeURL = function(parameters = {}) {
 export const loadDepartmentById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1564,7 +1564,7 @@ export const loadDepartmentById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadDepartmentById_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/{id}'
+  return '/unified-identity/api/departments/{id}'
 }
 export const loadDepartmentById_TYPE = function() {
   return 'get'
@@ -1572,7 +1572,7 @@ export const loadDepartmentById_TYPE = function() {
 export const loadDepartmentByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1594,7 +1594,7 @@ export const loadDepartmentByIdURL = function(parameters = {}) {
 export const updateDepartment = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1613,7 +1613,7 @@ export const updateDepartment = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateDepartment_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/{id}'
+  return '/unified-identity/api/departments/{id}'
 }
 export const updateDepartment_TYPE = function() {
   return 'put'
@@ -1621,7 +1621,7 @@ export const updateDepartment_TYPE = function() {
 export const updateDepartmentURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1642,7 +1642,7 @@ export const updateDepartmentURL = function(parameters = {}) {
 export const deleteDepartmentById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1658,7 +1658,7 @@ export const deleteDepartmentById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteDepartmentById_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/{id}'
+  return '/unified-identity/api/departments/{id}'
 }
 export const deleteDepartmentById_TYPE = function() {
   return 'delete'
@@ -1666,7 +1666,7 @@ export const deleteDepartmentById_TYPE = function() {
 export const deleteDepartmentByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1688,7 +1688,7 @@ export const deleteDepartmentByIdURL = function(parameters = {}) {
 export const updateDepartmentPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -1707,7 +1707,7 @@ export const updateDepartmentPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateDepartmentPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/{id}'
+  return '/unified-identity/api/departments/{id}'
 }
 export const updateDepartmentPatch_TYPE = function() {
   return 'patch'
@@ -1715,7 +1715,7 @@ export const updateDepartmentPatch_TYPE = function() {
 export const updateDepartmentPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/{id}'
+  let path = '/unified-identity/api/departments/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1736,7 +1736,7 @@ export const updateDepartmentPatchURL = function(parameters = {}) {
 export const disableDepartmentById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/{id}/disable'
+  let path = '/unified-identity/api/departments/{id}/disable'
   let body
   let queryParameters = {}
   let form = {}
@@ -1752,7 +1752,7 @@ export const disableDepartmentById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const disableDepartmentById_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/{id}/disable'
+  return '/unified-identity/api/departments/{id}/disable'
 }
 export const disableDepartmentById_TYPE = function() {
   return 'put'
@@ -1760,7 +1760,7 @@ export const disableDepartmentById_TYPE = function() {
 export const disableDepartmentByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/{id}/disable'
+  let path = '/unified-identity/api/departments/{id}/disable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1781,7 +1781,7 @@ export const disableDepartmentByIdURL = function(parameters = {}) {
 export const enableDepartmentById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/departments/{id}/enable'
+  let path = '/unified-identity/api/departments/{id}/enable'
   let body
   let queryParameters = {}
   let form = {}
@@ -1797,7 +1797,7 @@ export const enableDepartmentById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const enableDepartmentById_RAW_URL = function() {
-  return '/unified-identity-server/api/departments/{id}/enable'
+  return '/unified-identity/api/departments/{id}/enable'
 }
 export const enableDepartmentById_TYPE = function() {
   return 'put'
@@ -1805,7 +1805,7 @@ export const enableDepartmentById_TYPE = function() {
 export const enableDepartmentByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/departments/{id}/enable'
+  let path = '/unified-identity/api/departments/{id}/enable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -1837,7 +1837,7 @@ export const enableDepartmentByIdURL = function(parameters = {}) {
 export const listDictionaries = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaries'
+  let path = '/unified-identity/api/dictionaries'
   let body
   let queryParameters = {}
   let form = {}
@@ -1882,7 +1882,7 @@ export const listDictionaries = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listDictionaries_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaries'
+  return '/unified-identity/api/dictionaries'
 }
 export const listDictionaries_TYPE = function() {
   return 'get'
@@ -1890,7 +1890,7 @@ export const listDictionaries_TYPE = function() {
 export const listDictionariesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaries'
+  let path = '/unified-identity/api/dictionaries'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -1943,7 +1943,7 @@ export const listDictionariesURL = function(parameters = {}) {
 export const createDictionary = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaries'
+  let path = '/unified-identity/api/dictionaries'
   let body
   let queryParameters = {}
   let form = {}
@@ -1958,7 +1958,7 @@ export const createDictionary = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createDictionary_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaries'
+  return '/unified-identity/api/dictionaries'
 }
 export const createDictionary_TYPE = function() {
   return 'post'
@@ -1966,7 +1966,7 @@ export const createDictionary_TYPE = function() {
 export const createDictionaryURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaries'
+  let path = '/unified-identity/api/dictionaries'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -1986,7 +1986,7 @@ export const createDictionaryURL = function(parameters = {}) {
 export const loadDictionaryById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2002,7 +2002,7 @@ export const loadDictionaryById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadDictionaryById_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaries/{id}'
+  return '/unified-identity/api/dictionaries/{id}'
 }
 export const loadDictionaryById_TYPE = function() {
   return 'get'
@@ -2010,7 +2010,7 @@ export const loadDictionaryById_TYPE = function() {
 export const loadDictionaryByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2032,7 +2032,7 @@ export const loadDictionaryByIdURL = function(parameters = {}) {
 export const updateDictionary = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2051,7 +2051,7 @@ export const updateDictionary = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateDictionary_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaries/{id}'
+  return '/unified-identity/api/dictionaries/{id}'
 }
 export const updateDictionary_TYPE = function() {
   return 'put'
@@ -2059,7 +2059,7 @@ export const updateDictionary_TYPE = function() {
 export const updateDictionaryURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2080,7 +2080,7 @@ export const updateDictionaryURL = function(parameters = {}) {
 export const deleteDictionaryById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2096,7 +2096,7 @@ export const deleteDictionaryById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteDictionaryById_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaries/{id}'
+  return '/unified-identity/api/dictionaries/{id}'
 }
 export const deleteDictionaryById_TYPE = function() {
   return 'delete'
@@ -2104,7 +2104,7 @@ export const deleteDictionaryById_TYPE = function() {
 export const deleteDictionaryByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2126,7 +2126,7 @@ export const deleteDictionaryByIdURL = function(parameters = {}) {
 export const updateDictionaryPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2145,7 +2145,7 @@ export const updateDictionaryPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateDictionaryPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaries/{id}'
+  return '/unified-identity/api/dictionaries/{id}'
 }
 export const updateDictionaryPatch_TYPE = function() {
   return 'patch'
@@ -2153,7 +2153,7 @@ export const updateDictionaryPatch_TYPE = function() {
 export const updateDictionaryPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaries/{id}'
+  let path = '/unified-identity/api/dictionaries/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2183,7 +2183,7 @@ export const updateDictionaryPatchURL = function(parameters = {}) {
 export const listDictionaryTypes = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaryTypes'
+  let path = '/unified-identity/api/dictionaryTypes'
   let body
   let queryParameters = {}
   let form = {}
@@ -2222,7 +2222,7 @@ export const listDictionaryTypes = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listDictionaryTypes_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaryTypes'
+  return '/unified-identity/api/dictionaryTypes'
 }
 export const listDictionaryTypes_TYPE = function() {
   return 'get'
@@ -2230,7 +2230,7 @@ export const listDictionaryTypes_TYPE = function() {
 export const listDictionaryTypesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaryTypes'
+  let path = '/unified-identity/api/dictionaryTypes'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -2277,7 +2277,7 @@ export const listDictionaryTypesURL = function(parameters = {}) {
 export const createDictionaryType = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaryTypes'
+  let path = '/unified-identity/api/dictionaryTypes'
   let body
   let queryParameters = {}
   let form = {}
@@ -2292,7 +2292,7 @@ export const createDictionaryType = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createDictionaryType_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaryTypes'
+  return '/unified-identity/api/dictionaryTypes'
 }
 export const createDictionaryType_TYPE = function() {
   return 'post'
@@ -2300,7 +2300,7 @@ export const createDictionaryType_TYPE = function() {
 export const createDictionaryTypeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaryTypes'
+  let path = '/unified-identity/api/dictionaryTypes'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -2320,7 +2320,7 @@ export const createDictionaryTypeURL = function(parameters = {}) {
 export const loadDictionaryTypeById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2336,7 +2336,7 @@ export const loadDictionaryTypeById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadDictionaryTypeById_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaryTypes/{id}'
+  return '/unified-identity/api/dictionaryTypes/{id}'
 }
 export const loadDictionaryTypeById_TYPE = function() {
   return 'get'
@@ -2344,7 +2344,7 @@ export const loadDictionaryTypeById_TYPE = function() {
 export const loadDictionaryTypeByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2366,7 +2366,7 @@ export const loadDictionaryTypeByIdURL = function(parameters = {}) {
 export const updateDictionaryType = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2385,7 +2385,7 @@ export const updateDictionaryType = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateDictionaryType_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaryTypes/{id}'
+  return '/unified-identity/api/dictionaryTypes/{id}'
 }
 export const updateDictionaryType_TYPE = function() {
   return 'put'
@@ -2393,7 +2393,7 @@ export const updateDictionaryType_TYPE = function() {
 export const updateDictionaryTypeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2414,7 +2414,7 @@ export const updateDictionaryTypeURL = function(parameters = {}) {
 export const deleteDictionaryTypeById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2430,7 +2430,7 @@ export const deleteDictionaryTypeById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteDictionaryTypeById_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaryTypes/{id}'
+  return '/unified-identity/api/dictionaryTypes/{id}'
 }
 export const deleteDictionaryTypeById_TYPE = function() {
   return 'delete'
@@ -2438,7 +2438,7 @@ export const deleteDictionaryTypeById_TYPE = function() {
 export const deleteDictionaryTypeByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2460,7 +2460,7 @@ export const deleteDictionaryTypeByIdURL = function(parameters = {}) {
 export const updateDictionaryTypePatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2479,7 +2479,7 @@ export const updateDictionaryTypePatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateDictionaryTypePatch_RAW_URL = function() {
-  return '/unified-identity-server/api/dictionaryTypes/{id}'
+  return '/unified-identity/api/dictionaryTypes/{id}'
 }
 export const updateDictionaryTypePatch_TYPE = function() {
   return 'patch'
@@ -2487,7 +2487,7 @@ export const updateDictionaryTypePatch_TYPE = function() {
 export const updateDictionaryTypePatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/dictionaryTypes/{id}'
+  let path = '/unified-identity/api/dictionaryTypes/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2520,7 +2520,7 @@ export const updateDictionaryTypePatchURL = function(parameters = {}) {
 export const listDuties = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/duties'
+  let path = '/unified-identity/api/duties'
   let body
   let queryParameters = {}
   let form = {}
@@ -2568,7 +2568,7 @@ export const listDuties = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listDuties_RAW_URL = function() {
-  return '/unified-identity-server/api/duties'
+  return '/unified-identity/api/duties'
 }
 export const listDuties_TYPE = function() {
   return 'get'
@@ -2576,7 +2576,7 @@ export const listDuties_TYPE = function() {
 export const listDutiesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/duties'
+  let path = '/unified-identity/api/duties'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -2632,7 +2632,7 @@ export const listDutiesURL = function(parameters = {}) {
 export const createDuty = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/duties'
+  let path = '/unified-identity/api/duties'
   let body
   let queryParameters = {}
   let form = {}
@@ -2647,7 +2647,7 @@ export const createDuty = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createDuty_RAW_URL = function() {
-  return '/unified-identity-server/api/duties'
+  return '/unified-identity/api/duties'
 }
 export const createDuty_TYPE = function() {
   return 'post'
@@ -2655,7 +2655,7 @@ export const createDuty_TYPE = function() {
 export const createDutyURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/duties'
+  let path = '/unified-identity/api/duties'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -2675,7 +2675,7 @@ export const createDutyURL = function(parameters = {}) {
 export const loadDutyById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2691,7 +2691,7 @@ export const loadDutyById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadDutyById_RAW_URL = function() {
-  return '/unified-identity-server/api/duties/{id}'
+  return '/unified-identity/api/duties/{id}'
 }
 export const loadDutyById_TYPE = function() {
   return 'get'
@@ -2699,7 +2699,7 @@ export const loadDutyById_TYPE = function() {
 export const loadDutyByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2721,7 +2721,7 @@ export const loadDutyByIdURL = function(parameters = {}) {
 export const updateDuty = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2740,7 +2740,7 @@ export const updateDuty = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateDuty_RAW_URL = function() {
-  return '/unified-identity-server/api/duties/{id}'
+  return '/unified-identity/api/duties/{id}'
 }
 export const updateDuty_TYPE = function() {
   return 'put'
@@ -2748,7 +2748,7 @@ export const updateDuty_TYPE = function() {
 export const updateDutyURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2769,7 +2769,7 @@ export const updateDutyURL = function(parameters = {}) {
 export const deleteDutyById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2785,7 +2785,7 @@ export const deleteDutyById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteDutyById_RAW_URL = function() {
-  return '/unified-identity-server/api/duties/{id}'
+  return '/unified-identity/api/duties/{id}'
 }
 export const deleteDutyById_TYPE = function() {
   return 'delete'
@@ -2793,7 +2793,7 @@ export const deleteDutyById_TYPE = function() {
 export const deleteDutyByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2815,7 +2815,7 @@ export const deleteDutyByIdURL = function(parameters = {}) {
 export const updateDutyPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -2834,7 +2834,7 @@ export const updateDutyPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateDutyPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/duties/{id}'
+  return '/unified-identity/api/duties/{id}'
 }
 export const updateDutyPatch_TYPE = function() {
   return 'patch'
@@ -2842,7 +2842,7 @@ export const updateDutyPatch_TYPE = function() {
 export const updateDutyPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/duties/{id}'
+  let path = '/unified-identity/api/duties/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -2878,7 +2878,7 @@ parent.name,sortIndex,isEnable,createTime
 export const listApis = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces'
+  let path = '/unified-identity/api/interfaces'
   let body
   let queryParameters = {}
   let form = {}
@@ -2932,7 +2932,7 @@ export const listApis = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listApis_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces'
+  return '/unified-identity/api/interfaces'
 }
 export const listApis_TYPE = function() {
   return 'get'
@@ -2940,7 +2940,7 @@ export const listApis_TYPE = function() {
 export const listApisURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces'
+  let path = '/unified-identity/api/interfaces'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -3002,7 +3002,7 @@ export const listApisURL = function(parameters = {}) {
 export const createApi = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces'
+  let path = '/unified-identity/api/interfaces'
   let body
   let queryParameters = {}
   let form = {}
@@ -3017,7 +3017,7 @@ export const createApi = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createApi_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces'
+  return '/unified-identity/api/interfaces'
 }
 export const createApi_TYPE = function() {
   return 'post'
@@ -3025,7 +3025,7 @@ export const createApi_TYPE = function() {
 export const createApiURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces'
+  let path = '/unified-identity/api/interfaces'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -3055,7 +3055,7 @@ export const createApiURL = function(parameters = {}) {
 export const apiTree = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces/tree'
+  let path = '/unified-identity/api/interfaces/tree'
   let body
   let queryParameters = {}
   let form = {}
@@ -3100,7 +3100,7 @@ export const apiTree = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const apiTree_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces/tree'
+  return '/unified-identity/api/interfaces/tree'
 }
 export const apiTree_TYPE = function() {
   return 'get'
@@ -3108,7 +3108,7 @@ export const apiTree_TYPE = function() {
 export const apiTreeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces/tree'
+  let path = '/unified-identity/api/interfaces/tree'
   if (parameters['searchCode'] !== undefined) {
     queryParameters['search_code'] = parameters['searchCode']
   }
@@ -3161,7 +3161,7 @@ export const apiTreeURL = function(parameters = {}) {
 export const loadApiById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3177,7 +3177,7 @@ export const loadApiById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadApiById_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces/{id}'
+  return '/unified-identity/api/interfaces/{id}'
 }
 export const loadApiById_TYPE = function() {
   return 'get'
@@ -3185,7 +3185,7 @@ export const loadApiById_TYPE = function() {
 export const loadApiByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3207,7 +3207,7 @@ export const loadApiByIdURL = function(parameters = {}) {
 export const updateApi = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3226,7 +3226,7 @@ export const updateApi = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateApi_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces/{id}'
+  return '/unified-identity/api/interfaces/{id}'
 }
 export const updateApi_TYPE = function() {
   return 'put'
@@ -3234,7 +3234,7 @@ export const updateApi_TYPE = function() {
 export const updateApiURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3255,7 +3255,7 @@ export const updateApiURL = function(parameters = {}) {
 export const deleteApiById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3271,7 +3271,7 @@ export const deleteApiById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteApiById_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces/{id}'
+  return '/unified-identity/api/interfaces/{id}'
 }
 export const deleteApiById_TYPE = function() {
   return 'delete'
@@ -3279,7 +3279,7 @@ export const deleteApiById_TYPE = function() {
 export const deleteApiByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3301,7 +3301,7 @@ export const deleteApiByIdURL = function(parameters = {}) {
 export const updateApiPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3320,7 +3320,7 @@ export const updateApiPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateApiPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/interfaces/{id}'
+  return '/unified-identity/api/interfaces/{id}'
 }
 export const updateApiPatch_TYPE = function() {
   return 'patch'
@@ -3328,7 +3328,7 @@ export const updateApiPatch_TYPE = function() {
 export const updateApiPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/interfaces/{id}'
+  let path = '/unified-identity/api/interfaces/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3362,7 +3362,7 @@ export const updateApiPatchURL = function(parameters = {}) {
 export const listOrganizations = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations'
+  let path = '/unified-identity/api/organizations'
   let body
   let queryParameters = {}
   let form = {}
@@ -3413,7 +3413,7 @@ export const listOrganizations = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listOrganizations_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations'
+  return '/unified-identity/api/organizations'
 }
 export const listOrganizations_TYPE = function() {
   return 'get'
@@ -3421,7 +3421,7 @@ export const listOrganizations_TYPE = function() {
 export const listOrganizationsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations'
+  let path = '/unified-identity/api/organizations'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -3480,7 +3480,7 @@ export const listOrganizationsURL = function(parameters = {}) {
 export const createOrganization = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations'
+  let path = '/unified-identity/api/organizations'
   let body
   let queryParameters = {}
   let form = {}
@@ -3495,7 +3495,7 @@ export const createOrganization = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createOrganization_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations'
+  return '/unified-identity/api/organizations'
 }
 export const createOrganization_TYPE = function() {
   return 'post'
@@ -3503,7 +3503,7 @@ export const createOrganization_TYPE = function() {
 export const createOrganizationURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations'
+  let path = '/unified-identity/api/organizations'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -3522,7 +3522,7 @@ export const createOrganizationURL = function(parameters = {}) {
 export const organizationsTree = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/tree'
+  let path = '/unified-identity/api/organizations/tree'
   let body
   let queryParameters = {}
   let form = {}
@@ -3534,7 +3534,7 @@ export const organizationsTree = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const organizationsTree_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/tree'
+  return '/unified-identity/api/organizations/tree'
 }
 export const organizationsTree_TYPE = function() {
   return 'get'
@@ -3542,7 +3542,7 @@ export const organizationsTree_TYPE = function() {
 export const organizationsTreeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/tree'
+  let path = '/unified-identity/api/organizations/tree'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -3562,7 +3562,7 @@ export const organizationsTreeURL = function(parameters = {}) {
 export const loadOrganizationById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3578,7 +3578,7 @@ export const loadOrganizationById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadOrganizationById_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/{id}'
+  return '/unified-identity/api/organizations/{id}'
 }
 export const loadOrganizationById_TYPE = function() {
   return 'get'
@@ -3586,7 +3586,7 @@ export const loadOrganizationById_TYPE = function() {
 export const loadOrganizationByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3608,7 +3608,7 @@ export const loadOrganizationByIdURL = function(parameters = {}) {
 export const updateOrganization = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3627,7 +3627,7 @@ export const updateOrganization = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateOrganization_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/{id}'
+  return '/unified-identity/api/organizations/{id}'
 }
 export const updateOrganization_TYPE = function() {
   return 'put'
@@ -3635,7 +3635,7 @@ export const updateOrganization_TYPE = function() {
 export const updateOrganizationURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3656,7 +3656,7 @@ export const updateOrganizationURL = function(parameters = {}) {
 export const deleteOrganizationById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3672,7 +3672,7 @@ export const deleteOrganizationById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteOrganizationById_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/{id}'
+  return '/unified-identity/api/organizations/{id}'
 }
 export const deleteOrganizationById_TYPE = function() {
   return 'delete'
@@ -3680,7 +3680,7 @@ export const deleteOrganizationById_TYPE = function() {
 export const deleteOrganizationByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3702,7 +3702,7 @@ export const deleteOrganizationByIdURL = function(parameters = {}) {
 export const updateOrganizationPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -3721,7 +3721,7 @@ export const updateOrganizationPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateOrganizationPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/{id}'
+  return '/unified-identity/api/organizations/{id}'
 }
 export const updateOrganizationPatch_TYPE = function() {
   return 'patch'
@@ -3729,7 +3729,7 @@ export const updateOrganizationPatch_TYPE = function() {
 export const updateOrganizationPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/{id}'
+  let path = '/unified-identity/api/organizations/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3750,7 +3750,7 @@ export const updateOrganizationPatchURL = function(parameters = {}) {
 export const disableOrganizationById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/{id}/disable'
+  let path = '/unified-identity/api/organizations/{id}/disable'
   let body
   let queryParameters = {}
   let form = {}
@@ -3766,7 +3766,7 @@ export const disableOrganizationById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const disableOrganizationById_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/{id}/disable'
+  return '/unified-identity/api/organizations/{id}/disable'
 }
 export const disableOrganizationById_TYPE = function() {
   return 'put'
@@ -3774,7 +3774,7 @@ export const disableOrganizationById_TYPE = function() {
 export const disableOrganizationByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/{id}/disable'
+  let path = '/unified-identity/api/organizations/{id}/disable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3795,7 +3795,7 @@ export const disableOrganizationByIdURL = function(parameters = {}) {
 export const enableOrganizationById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/organizations/{id}/enable'
+  let path = '/unified-identity/api/organizations/{id}/enable'
   let body
   let queryParameters = {}
   let form = {}
@@ -3811,7 +3811,7 @@ export const enableOrganizationById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const enableOrganizationById_RAW_URL = function() {
-  return '/unified-identity-server/api/organizations/{id}/enable'
+  return '/unified-identity/api/organizations/{id}/enable'
 }
 export const enableOrganizationById_TYPE = function() {
   return 'put'
@@ -3819,7 +3819,7 @@ export const enableOrganizationById_TYPE = function() {
 export const enableOrganizationByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/organizations/{id}/enable'
+  let path = '/unified-identity/api/organizations/{id}/enable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -3857,7 +3857,7 @@ parent.name,sortIndex,isEnable,createTime
 export const listPermissions = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions'
+  let path = '/unified-identity/api/permissions'
   let body
   let queryParameters = {}
   let form = {}
@@ -3917,7 +3917,7 @@ export const listPermissions = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listPermissions_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions'
+  return '/unified-identity/api/permissions'
 }
 export const listPermissions_TYPE = function() {
   return 'get'
@@ -3925,7 +3925,7 @@ export const listPermissions_TYPE = function() {
 export const listPermissionsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions'
+  let path = '/unified-identity/api/permissions'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -3993,7 +3993,7 @@ export const listPermissionsURL = function(parameters = {}) {
 export const createPermission = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions'
+  let path = '/unified-identity/api/permissions'
   let body
   let queryParameters = {}
   let form = {}
@@ -4008,7 +4008,7 @@ export const createPermission = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createPermission_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions'
+  return '/unified-identity/api/permissions'
 }
 export const createPermission_TYPE = function() {
   return 'post'
@@ -4016,7 +4016,7 @@ export const createPermission_TYPE = function() {
 export const createPermissionURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions'
+  let path = '/unified-identity/api/permissions'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -4038,7 +4038,7 @@ export const createPermissionURL = function(parameters = {}) {
 export const listPermissionsTree = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions/tree'
+  let path = '/unified-identity/api/permissions/tree'
   let body
   let queryParameters = {}
   let form = {}
@@ -4059,7 +4059,7 @@ export const listPermissionsTree = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listPermissionsTree_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions/tree'
+  return '/unified-identity/api/permissions/tree'
 }
 export const listPermissionsTree_TYPE = function() {
   return 'get'
@@ -4067,7 +4067,7 @@ export const listPermissionsTree_TYPE = function() {
 export const listPermissionsTreeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions/tree'
+  let path = '/unified-identity/api/permissions/tree'
   if (parameters['searchApplicationId'] !== undefined) {
     queryParameters['search_applicationId'] = parameters['searchApplicationId']
   }
@@ -4096,7 +4096,7 @@ export const listPermissionsTreeURL = function(parameters = {}) {
 export const loadPermissionById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4112,7 +4112,7 @@ export const loadPermissionById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadPermissionById_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions/{id}'
+  return '/unified-identity/api/permissions/{id}'
 }
 export const loadPermissionById_TYPE = function() {
   return 'get'
@@ -4120,7 +4120,7 @@ export const loadPermissionById_TYPE = function() {
 export const loadPermissionByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4142,7 +4142,7 @@ export const loadPermissionByIdURL = function(parameters = {}) {
 export const updatePermission = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4161,7 +4161,7 @@ export const updatePermission = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updatePermission_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions/{id}'
+  return '/unified-identity/api/permissions/{id}'
 }
 export const updatePermission_TYPE = function() {
   return 'put'
@@ -4169,7 +4169,7 @@ export const updatePermission_TYPE = function() {
 export const updatePermissionURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4190,7 +4190,7 @@ export const updatePermissionURL = function(parameters = {}) {
 export const deletePermissionById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4206,7 +4206,7 @@ export const deletePermissionById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deletePermissionById_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions/{id}'
+  return '/unified-identity/api/permissions/{id}'
 }
 export const deletePermissionById_TYPE = function() {
   return 'delete'
@@ -4214,7 +4214,7 @@ export const deletePermissionById_TYPE = function() {
 export const deletePermissionByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4236,7 +4236,7 @@ export const deletePermissionByIdURL = function(parameters = {}) {
 export const updatePermissionPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4255,7 +4255,7 @@ export const updatePermissionPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updatePermissionPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/permissions/{id}'
+  return '/unified-identity/api/permissions/{id}'
 }
 export const updatePermissionPatch_TYPE = function() {
   return 'patch'
@@ -4263,7 +4263,7 @@ export const updatePermissionPatch_TYPE = function() {
 export const updatePermissionPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/permissions/{id}'
+  let path = '/unified-identity/api/permissions/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4283,7 +4283,7 @@ export const updatePermissionPatchURL = function(parameters = {}) {
 export const principal = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/principal'
+  let path = '/unified-identity/api/principal'
   let body
   let queryParameters = {}
   let form = {}
@@ -4295,7 +4295,7 @@ export const principal = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const principal_RAW_URL = function() {
-  return '/unified-identity-server/api/principal'
+  return '/unified-identity/api/principal'
 }
 export const principal_TYPE = function() {
   return 'get'
@@ -4303,7 +4303,7 @@ export const principal_TYPE = function() {
 export const principalURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/principal'
+  let path = '/unified-identity/api/principal'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -4327,7 +4327,7 @@ export const principalURL = function(parameters = {}) {
 export const listRegisteredClients = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/registered-clients'
+  let path = '/unified-identity/api/registered-clients'
   let body
   let queryParameters = {}
   let form = {}
@@ -4354,7 +4354,7 @@ export const listRegisteredClients = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listRegisteredClients_RAW_URL = function() {
-  return '/unified-identity-server/api/registered-clients'
+  return '/unified-identity/api/registered-clients'
 }
 export const listRegisteredClients_TYPE = function() {
   return 'get'
@@ -4362,7 +4362,7 @@ export const listRegisteredClients_TYPE = function() {
 export const listRegisteredClientsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/registered-clients'
+  let path = '/unified-identity/api/registered-clients'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -4397,7 +4397,7 @@ export const listRegisteredClientsURL = function(parameters = {}) {
 export const createRegisteredClient = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/registered-clients'
+  let path = '/unified-identity/api/registered-clients'
   let body
   let queryParameters = {}
   let form = {}
@@ -4412,7 +4412,7 @@ export const createRegisteredClient = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createRegisteredClient_RAW_URL = function() {
-  return '/unified-identity-server/api/registered-clients'
+  return '/unified-identity/api/registered-clients'
 }
 export const createRegisteredClient_TYPE = function() {
   return 'post'
@@ -4420,7 +4420,7 @@ export const createRegisteredClient_TYPE = function() {
 export const createRegisteredClientURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/registered-clients'
+  let path = '/unified-identity/api/registered-clients'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -4440,7 +4440,7 @@ export const createRegisteredClientURL = function(parameters = {}) {
 export const loadRegisteredClientById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/registered-clients/{id}'
+  let path = '/unified-identity/api/registered-clients/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4456,7 +4456,7 @@ export const loadRegisteredClientById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadRegisteredClientById_RAW_URL = function() {
-  return '/unified-identity-server/api/registered-clients/{id}'
+  return '/unified-identity/api/registered-clients/{id}'
 }
 export const loadRegisteredClientById_TYPE = function() {
   return 'get'
@@ -4464,7 +4464,7 @@ export const loadRegisteredClientById_TYPE = function() {
 export const loadRegisteredClientByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/registered-clients/{id}'
+  let path = '/unified-identity/api/registered-clients/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4486,7 +4486,7 @@ export const loadRegisteredClientByIdURL = function(parameters = {}) {
 export const updateRegisteredClient = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/registered-clients/{id}'
+  let path = '/unified-identity/api/registered-clients/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4505,7 +4505,7 @@ export const updateRegisteredClient = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateRegisteredClient_RAW_URL = function() {
-  return '/unified-identity-server/api/registered-clients/{id}'
+  return '/unified-identity/api/registered-clients/{id}'
 }
 export const updateRegisteredClient_TYPE = function() {
   return 'put'
@@ -4513,7 +4513,7 @@ export const updateRegisteredClient_TYPE = function() {
 export const updateRegisteredClientURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/registered-clients/{id}'
+  let path = '/unified-identity/api/registered-clients/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4534,7 +4534,7 @@ export const updateRegisteredClientURL = function(parameters = {}) {
 export const deleteRegisteredClientById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/registered-clients/{id}'
+  let path = '/unified-identity/api/registered-clients/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4550,7 +4550,7 @@ export const deleteRegisteredClientById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteRegisteredClientById_RAW_URL = function() {
-  return '/unified-identity-server/api/registered-clients/{id}'
+  return '/unified-identity/api/registered-clients/{id}'
 }
 export const deleteRegisteredClientById_TYPE = function() {
   return 'delete'
@@ -4558,7 +4558,7 @@ export const deleteRegisteredClientById_TYPE = function() {
 export const deleteRegisteredClientByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/registered-clients/{id}'
+  let path = '/unified-identity/api/registered-clients/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4599,7 +4599,7 @@ export const deleteRegisteredClientByIdURL = function(parameters = {}) {
 export const listReservableConfigs = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs'
+  let path = '/unified-identity/api/reservableConfigs'
   let body
   let queryParameters = {}
   let form = {}
@@ -4671,7 +4671,7 @@ export const listReservableConfigs = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listReservableConfigs_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs'
+  return '/unified-identity/api/reservableConfigs'
 }
 export const listReservableConfigs_TYPE = function() {
   return 'get'
@@ -4679,7 +4679,7 @@ export const listReservableConfigs_TYPE = function() {
 export const listReservableConfigsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs'
+  let path = '/unified-identity/api/reservableConfigs'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -4759,7 +4759,7 @@ export const listReservableConfigsURL = function(parameters = {}) {
 export const createReservableConfig = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs'
+  let path = '/unified-identity/api/reservableConfigs'
   let body
   let queryParameters = {}
   let form = {}
@@ -4774,7 +4774,7 @@ export const createReservableConfig = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createReservableConfig_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs'
+  return '/unified-identity/api/reservableConfigs'
 }
 export const createReservableConfig_TYPE = function() {
   return 'post'
@@ -4782,7 +4782,7 @@ export const createReservableConfig_TYPE = function() {
 export const createReservableConfigURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs'
+  let path = '/unified-identity/api/reservableConfigs'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -4802,7 +4802,7 @@ export const createReservableConfigURL = function(parameters = {}) {
 export const loadReservableConfigByObjectType = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs/objectType/{objectType}'
+  let path = '/unified-identity/api/reservableConfigs/objectType/{objectType}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4818,7 +4818,7 @@ export const loadReservableConfigByObjectType = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadReservableConfigByObjectType_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs/objectType/{objectType}'
+  return '/unified-identity/api/reservableConfigs/objectType/{objectType}'
 }
 export const loadReservableConfigByObjectType_TYPE = function() {
   return 'get'
@@ -4826,7 +4826,7 @@ export const loadReservableConfigByObjectType_TYPE = function() {
 export const loadReservableConfigByObjectTypeURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs/objectType/{objectType}'
+  let path = '/unified-identity/api/reservableConfigs/objectType/{objectType}'
   path = path.replace('{objectType}', `${parameters['objectType']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4847,7 +4847,7 @@ export const loadReservableConfigByObjectTypeURL = function(parameters = {}) {
 export const loadReservableConfigById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4863,7 +4863,7 @@ export const loadReservableConfigById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadReservableConfigById_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs/{id}'
+  return '/unified-identity/api/reservableConfigs/{id}'
 }
 export const loadReservableConfigById_TYPE = function() {
   return 'get'
@@ -4871,7 +4871,7 @@ export const loadReservableConfigById_TYPE = function() {
 export const loadReservableConfigByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4893,7 +4893,7 @@ export const loadReservableConfigByIdURL = function(parameters = {}) {
 export const updateReservableConfig = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4912,7 +4912,7 @@ export const updateReservableConfig = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateReservableConfig_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs/{id}'
+  return '/unified-identity/api/reservableConfigs/{id}'
 }
 export const updateReservableConfig_TYPE = function() {
   return 'put'
@@ -4920,7 +4920,7 @@ export const updateReservableConfig_TYPE = function() {
 export const updateReservableConfigURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4941,7 +4941,7 @@ export const updateReservableConfigURL = function(parameters = {}) {
 export const deleteReservableConfigById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -4957,7 +4957,7 @@ export const deleteReservableConfigById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteReservableConfigById_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs/{id}'
+  return '/unified-identity/api/reservableConfigs/{id}'
 }
 export const deleteReservableConfigById_TYPE = function() {
   return 'delete'
@@ -4965,7 +4965,7 @@ export const deleteReservableConfigById_TYPE = function() {
 export const deleteReservableConfigByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -4987,7 +4987,7 @@ export const deleteReservableConfigByIdURL = function(parameters = {}) {
 export const updateReservableConfigPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5006,7 +5006,7 @@ export const updateReservableConfigPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateReservableConfigPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/reservableConfigs/{id}'
+  return '/unified-identity/api/reservableConfigs/{id}'
 }
 export const updateReservableConfigPatch_TYPE = function() {
   return 'patch'
@@ -5014,7 +5014,7 @@ export const updateReservableConfigPatch_TYPE = function() {
 export const updateReservableConfigPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/reservableConfigs/{id}'
+  let path = '/unified-identity/api/reservableConfigs/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5045,7 +5045,7 @@ export const updateReservableConfigPatchURL = function(parameters = {}) {
 export const listResources = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/resources'
+  let path = '/unified-identity/api/resources'
   let body
   let queryParameters = {}
   let form = {}
@@ -5087,7 +5087,7 @@ export const listResources = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listResources_RAW_URL = function() {
-  return '/unified-identity-server/api/resources'
+  return '/unified-identity/api/resources'
 }
 export const listResources_TYPE = function() {
   return 'get'
@@ -5095,7 +5095,7 @@ export const listResources_TYPE = function() {
 export const listResourcesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/resources'
+  let path = '/unified-identity/api/resources'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -5145,7 +5145,7 @@ export const listResourcesURL = function(parameters = {}) {
 export const createResource = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/resources'
+  let path = '/unified-identity/api/resources'
   let body
   let queryParameters = {}
   let form = {}
@@ -5160,7 +5160,7 @@ export const createResource = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createResource_RAW_URL = function() {
-  return '/unified-identity-server/api/resources'
+  return '/unified-identity/api/resources'
 }
 export const createResource_TYPE = function() {
   return 'post'
@@ -5168,7 +5168,7 @@ export const createResource_TYPE = function() {
 export const createResourceURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/resources'
+  let path = '/unified-identity/api/resources'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -5188,7 +5188,7 @@ export const createResourceURL = function(parameters = {}) {
 export const loadResourceById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/resources/{id}'
+  let path = '/unified-identity/api/resources/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5204,7 +5204,7 @@ export const loadResourceById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadResourceById_RAW_URL = function() {
-  return '/unified-identity-server/api/resources/{id}'
+  return '/unified-identity/api/resources/{id}'
 }
 export const loadResourceById_TYPE = function() {
   return 'get'
@@ -5212,7 +5212,7 @@ export const loadResourceById_TYPE = function() {
 export const loadResourceByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/resources/{id}'
+  let path = '/unified-identity/api/resources/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5234,7 +5234,7 @@ export const loadResourceByIdURL = function(parameters = {}) {
 export const updateResource = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/resources/{id}'
+  let path = '/unified-identity/api/resources/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5253,7 +5253,7 @@ export const updateResource = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateResource_RAW_URL = function() {
-  return '/unified-identity-server/api/resources/{id}'
+  return '/unified-identity/api/resources/{id}'
 }
 export const updateResource_TYPE = function() {
   return 'put'
@@ -5261,7 +5261,7 @@ export const updateResource_TYPE = function() {
 export const updateResourceURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/resources/{id}'
+  let path = '/unified-identity/api/resources/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5282,7 +5282,7 @@ export const updateResourceURL = function(parameters = {}) {
 export const deleteResourceById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/resources/{id}'
+  let path = '/unified-identity/api/resources/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5298,7 +5298,7 @@ export const deleteResourceById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteResourceById_RAW_URL = function() {
-  return '/unified-identity-server/api/resources/{id}'
+  return '/unified-identity/api/resources/{id}'
 }
 export const deleteResourceById_TYPE = function() {
   return 'delete'
@@ -5306,7 +5306,7 @@ export const deleteResourceById_TYPE = function() {
 export const deleteResourceByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/resources/{id}'
+  let path = '/unified-identity/api/resources/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5340,7 +5340,7 @@ export const deleteResourceByIdURL = function(parameters = {}) {
 export const listRoles = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles'
+  let path = '/unified-identity/api/roles'
   let body
   let queryParameters = {}
   let form = {}
@@ -5391,7 +5391,7 @@ export const listRoles = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listRoles_RAW_URL = function() {
-  return '/unified-identity-server/api/roles'
+  return '/unified-identity/api/roles'
 }
 export const listRoles_TYPE = function() {
   return 'get'
@@ -5399,7 +5399,7 @@ export const listRoles_TYPE = function() {
 export const listRolesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles'
+  let path = '/unified-identity/api/roles'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -5458,7 +5458,7 @@ export const listRolesURL = function(parameters = {}) {
 export const createRole = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles'
+  let path = '/unified-identity/api/roles'
   let body
   let queryParameters = {}
   let form = {}
@@ -5473,7 +5473,7 @@ export const createRole = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createRole_RAW_URL = function() {
-  return '/unified-identity-server/api/roles'
+  return '/unified-identity/api/roles'
 }
 export const createRole_TYPE = function() {
   return 'post'
@@ -5481,7 +5481,7 @@ export const createRole_TYPE = function() {
 export const createRoleURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles'
+  let path = '/unified-identity/api/roles'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -5511,7 +5511,7 @@ export const createRoleURL = function(parameters = {}) {
 export const listAllRoles = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/all'
+  let path = '/unified-identity/api/roles/all'
   let body
   let queryParameters = {}
   let form = {}
@@ -5553,7 +5553,7 @@ export const listAllRoles = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listAllRoles_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/all'
+  return '/unified-identity/api/roles/all'
 }
 export const listAllRoles_TYPE = function() {
   return 'get'
@@ -5561,7 +5561,7 @@ export const listAllRoles_TYPE = function() {
 export const listAllRolesURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/all'
+  let path = '/unified-identity/api/roles/all'
   if (parameters['searchApplicationId'] !== undefined) {
     queryParameters['search_applicationId'] = parameters['searchApplicationId']
   }
@@ -5611,7 +5611,7 @@ export const listAllRolesURL = function(parameters = {}) {
 export const loadRoleById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5627,7 +5627,7 @@ export const loadRoleById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadRoleById_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}'
+  return '/unified-identity/api/roles/{id}'
 }
 export const loadRoleById_TYPE = function() {
   return 'get'
@@ -5635,7 +5635,7 @@ export const loadRoleById_TYPE = function() {
 export const loadRoleByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5657,7 +5657,7 @@ export const loadRoleByIdURL = function(parameters = {}) {
 export const updateRole = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5676,7 +5676,7 @@ export const updateRole = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateRole_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}'
+  return '/unified-identity/api/roles/{id}'
 }
 export const updateRole_TYPE = function() {
   return 'put'
@@ -5684,7 +5684,7 @@ export const updateRole_TYPE = function() {
 export const updateRoleURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5705,7 +5705,7 @@ export const updateRoleURL = function(parameters = {}) {
 export const deleteRoleById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5721,7 +5721,7 @@ export const deleteRoleById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteRoleById_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}'
+  return '/unified-identity/api/roles/{id}'
 }
 export const deleteRoleById_TYPE = function() {
   return 'delete'
@@ -5729,7 +5729,7 @@ export const deleteRoleById_TYPE = function() {
 export const deleteRoleByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5751,7 +5751,7 @@ export const deleteRoleByIdURL = function(parameters = {}) {
 export const updateRolePatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -5770,7 +5770,7 @@ export const updateRolePatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateRolePatch_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}'
+  return '/unified-identity/api/roles/{id}'
 }
 export const updateRolePatch_TYPE = function() {
   return 'patch'
@@ -5778,7 +5778,7 @@ export const updateRolePatch_TYPE = function() {
 export const updateRolePatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}'
+  let path = '/unified-identity/api/roles/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5799,7 +5799,7 @@ export const updateRolePatchURL = function(parameters = {}) {
 export const disableRoleById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}/disable'
+  let path = '/unified-identity/api/roles/{id}/disable'
   let body
   let queryParameters = {}
   let form = {}
@@ -5815,7 +5815,7 @@ export const disableRoleById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const disableRoleById_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}/disable'
+  return '/unified-identity/api/roles/{id}/disable'
 }
 export const disableRoleById_TYPE = function() {
   return 'put'
@@ -5823,7 +5823,7 @@ export const disableRoleById_TYPE = function() {
 export const disableRoleByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}/disable'
+  let path = '/unified-identity/api/roles/{id}/disable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5844,7 +5844,7 @@ export const disableRoleByIdURL = function(parameters = {}) {
 export const enableRoleById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}/enable'
+  let path = '/unified-identity/api/roles/{id}/enable'
   let body
   let queryParameters = {}
   let form = {}
@@ -5860,7 +5860,7 @@ export const enableRoleById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const enableRoleById_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}/enable'
+  return '/unified-identity/api/roles/{id}/enable'
 }
 export const enableRoleById_TYPE = function() {
   return 'put'
@@ -5868,7 +5868,7 @@ export const enableRoleById_TYPE = function() {
 export const enableRoleByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}/enable'
+  let path = '/unified-identity/api/roles/{id}/enable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5890,7 +5890,7 @@ export const enableRoleByIdURL = function(parameters = {}) {
 export const setPermissions = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/roles/{id}/permissions'
+  let path = '/unified-identity/api/roles/{id}/permissions'
   let body
   let queryParameters = {}
   let form = {}
@@ -5909,7 +5909,7 @@ export const setPermissions = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const setPermissions_RAW_URL = function() {
-  return '/unified-identity-server/api/roles/{id}/permissions'
+  return '/unified-identity/api/roles/{id}/permissions'
 }
 export const setPermissions_TYPE = function() {
   return 'put'
@@ -5917,7 +5917,7 @@ export const setPermissions_TYPE = function() {
 export const setPermissionsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/roles/{id}/permissions'
+  let path = '/unified-identity/api/roles/{id}/permissions'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -5937,7 +5937,7 @@ export const setPermissionsURL = function(parameters = {}) {
 export const userInfo = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/user'
+  let path = '/unified-identity/api/user'
   let body
   let queryParameters = {}
   let form = {}
@@ -5949,7 +5949,7 @@ export const userInfo = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const userInfo_RAW_URL = function() {
-  return '/unified-identity-server/api/user'
+  return '/unified-identity/api/user'
 }
 export const userInfo_TYPE = function() {
   return 'get'
@@ -5957,7 +5957,7 @@ export const userInfo_TYPE = function() {
 export const userInfoURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/user'
+  let path = '/unified-identity/api/user'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -5977,7 +5977,7 @@ export const userInfoURL = function(parameters = {}) {
 export const userChangePassword = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/user/change-password'
+  let path = '/unified-identity/api/user/change-password'
   let body
   let queryParameters = {}
   let form = {}
@@ -5992,7 +5992,7 @@ export const userChangePassword = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const userChangePassword_RAW_URL = function() {
-  return '/unified-identity-server/api/user/change-password'
+  return '/unified-identity/api/user/change-password'
 }
 export const userChangePassword_TYPE = function() {
   return 'put'
@@ -6000,7 +6000,7 @@ export const userChangePassword_TYPE = function() {
 export const userChangePasswordURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/user/change-password'
+  let path = '/unified-identity/api/user/change-password'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -6042,7 +6042,7 @@ department.name,isEnable,createTime
 export const listUsers = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users'
+  let path = '/unified-identity/api/users'
   let body
   let queryParameters = {}
   let form = {}
@@ -6114,7 +6114,7 @@ export const listUsers = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const listUsers_RAW_URL = function() {
-  return '/unified-identity-server/api/users'
+  return '/unified-identity/api/users'
 }
 export const listUsers_TYPE = function() {
   return 'get'
@@ -6122,7 +6122,7 @@ export const listUsers_TYPE = function() {
 export const listUsersURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users'
+  let path = '/unified-identity/api/users'
   if (parameters['pageNumber'] !== undefined) {
     queryParameters['pageNumber'] = parameters['pageNumber']
   }
@@ -6202,7 +6202,7 @@ export const listUsersURL = function(parameters = {}) {
 export const createUser = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users'
+  let path = '/unified-identity/api/users'
   let body
   let queryParameters = {}
   let form = {}
@@ -6217,7 +6217,7 @@ export const createUser = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const createUser_RAW_URL = function() {
-  return '/unified-identity-server/api/users'
+  return '/unified-identity/api/users'
 }
 export const createUser_TYPE = function() {
   return 'post'
@@ -6225,7 +6225,7 @@ export const createUser_TYPE = function() {
 export const createUserURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users'
+  let path = '/unified-identity/api/users'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -6245,7 +6245,7 @@ export const createUserURL = function(parameters = {}) {
 export const batchDeleteUserByIds = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/batch-delete'
+  let path = '/unified-identity/api/users/batch-delete'
   let body
   let queryParameters = {}
   let form = {}
@@ -6260,7 +6260,7 @@ export const batchDeleteUserByIds = function(parameters = {}) {
   return request('post', domain + path, body, queryParameters, form, config)
 }
 export const batchDeleteUserByIds_RAW_URL = function() {
-  return '/unified-identity-server/api/users/batch-delete'
+  return '/unified-identity/api/users/batch-delete'
 }
 export const batchDeleteUserByIds_TYPE = function() {
   return 'post'
@@ -6268,7 +6268,7 @@ export const batchDeleteUserByIds_TYPE = function() {
 export const batchDeleteUserByIdsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/batch-delete'
+  let path = '/unified-identity/api/users/batch-delete'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -6288,7 +6288,7 @@ export const batchDeleteUserByIdsURL = function(parameters = {}) {
 export const batchDisableUserByIds = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/batch-disable'
+  let path = '/unified-identity/api/users/batch-disable'
   let body
   let queryParameters = {}
   let form = {}
@@ -6303,7 +6303,7 @@ export const batchDisableUserByIds = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const batchDisableUserByIds_RAW_URL = function() {
-  return '/unified-identity-server/api/users/batch-disable'
+  return '/unified-identity/api/users/batch-disable'
 }
 export const batchDisableUserByIds_TYPE = function() {
   return 'put'
@@ -6311,7 +6311,7 @@ export const batchDisableUserByIds_TYPE = function() {
 export const batchDisableUserByIdsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/batch-disable'
+  let path = '/unified-identity/api/users/batch-disable'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -6331,7 +6331,7 @@ export const batchDisableUserByIdsURL = function(parameters = {}) {
 export const batchEnableUserByIds = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/batch-enable'
+  let path = '/unified-identity/api/users/batch-enable'
   let body
   let queryParameters = {}
   let form = {}
@@ -6346,7 +6346,7 @@ export const batchEnableUserByIds = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const batchEnableUserByIds_RAW_URL = function() {
-  return '/unified-identity-server/api/users/batch-enable'
+  return '/unified-identity/api/users/batch-enable'
 }
 export const batchEnableUserByIds_TYPE = function() {
   return 'put'
@@ -6354,7 +6354,7 @@ export const batchEnableUserByIds_TYPE = function() {
 export const batchEnableUserByIdsURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/batch-enable'
+  let path = '/unified-identity/api/users/batch-enable'
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
       queryParameters[parameterName] = parameters.$queryParameters[parameterName]
@@ -6374,7 +6374,7 @@ export const batchEnableUserByIdsURL = function(parameters = {}) {
 export const loadUserById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -6390,7 +6390,7 @@ export const loadUserById = function(parameters = {}) {
   return request('get', domain + path, body, queryParameters, form, config)
 }
 export const loadUserById_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}'
+  return '/unified-identity/api/users/{id}'
 }
 export const loadUserById_TYPE = function() {
   return 'get'
@@ -6398,7 +6398,7 @@ export const loadUserById_TYPE = function() {
 export const loadUserByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -6420,7 +6420,7 @@ export const loadUserByIdURL = function(parameters = {}) {
 export const updateUser = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -6439,7 +6439,7 @@ export const updateUser = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const updateUser_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}'
+  return '/unified-identity/api/users/{id}'
 }
 export const updateUser_TYPE = function() {
   return 'put'
@@ -6447,7 +6447,7 @@ export const updateUser_TYPE = function() {
 export const updateUserURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -6468,7 +6468,7 @@ export const updateUserURL = function(parameters = {}) {
 export const deleteUserById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -6484,7 +6484,7 @@ export const deleteUserById = function(parameters = {}) {
   return request('delete', domain + path, body, queryParameters, form, config)
 }
 export const deleteUserById_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}'
+  return '/unified-identity/api/users/{id}'
 }
 export const deleteUserById_TYPE = function() {
   return 'delete'
@@ -6492,7 +6492,7 @@ export const deleteUserById_TYPE = function() {
 export const deleteUserByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -6514,7 +6514,7 @@ export const deleteUserByIdURL = function(parameters = {}) {
 export const updateUserPatch = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   let body
   let queryParameters = {}
   let form = {}
@@ -6533,7 +6533,7 @@ export const updateUserPatch = function(parameters = {}) {
   return request('patch', domain + path, body, queryParameters, form, config)
 }
 export const updateUserPatch_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}'
+  return '/unified-identity/api/users/{id}'
 }
 export const updateUserPatch_TYPE = function() {
   return 'patch'
@@ -6541,7 +6541,7 @@ export const updateUserPatch_TYPE = function() {
 export const updateUserPatchURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}'
+  let path = '/unified-identity/api/users/{id}'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -6562,7 +6562,7 @@ export const updateUserPatchURL = function(parameters = {}) {
 export const disableUserById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}/disable'
+  let path = '/unified-identity/api/users/{id}/disable'
   let body
   let queryParameters = {}
   let form = {}
@@ -6578,7 +6578,7 @@ export const disableUserById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const disableUserById_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}/disable'
+  return '/unified-identity/api/users/{id}/disable'
 }
 export const disableUserById_TYPE = function() {
   return 'put'
@@ -6586,7 +6586,7 @@ export const disableUserById_TYPE = function() {
 export const disableUserByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}/disable'
+  let path = '/unified-identity/api/users/{id}/disable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -6607,7 +6607,7 @@ export const disableUserByIdURL = function(parameters = {}) {
 export const enableUserById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}/enable'
+  let path = '/unified-identity/api/users/{id}/enable'
   let body
   let queryParameters = {}
   let form = {}
@@ -6623,7 +6623,7 @@ export const enableUserById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const enableUserById_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}/enable'
+  return '/unified-identity/api/users/{id}/enable'
 }
 export const enableUserById_TYPE = function() {
   return 'put'
@@ -6631,7 +6631,7 @@ export const enableUserById_TYPE = function() {
 export const enableUserByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}/enable'
+  let path = '/unified-identity/api/users/{id}/enable'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
@@ -6652,7 +6652,7 @@ export const enableUserByIdURL = function(parameters = {}) {
 export const resetUserPasswordById = function(parameters = {}) {
   const domain = parameters.$domain ? parameters.$domain : getDomain()
   const config = parameters.$config
-  let path = '/unified-identity-server/api/users/{id}/reset-password'
+  let path = '/unified-identity/api/users/{id}/reset-password'
   let body
   let queryParameters = {}
   let form = {}
@@ -6668,7 +6668,7 @@ export const resetUserPasswordById = function(parameters = {}) {
   return request('put', domain + path, body, queryParameters, form, config)
 }
 export const resetUserPasswordById_RAW_URL = function() {
-  return '/unified-identity-server/api/users/{id}/reset-password'
+  return '/unified-identity/api/users/{id}/reset-password'
 }
 export const resetUserPasswordById_TYPE = function() {
   return 'put'
@@ -6676,7 +6676,7 @@ export const resetUserPasswordById_TYPE = function() {
 export const resetUserPasswordByIdURL = function(parameters = {}) {
   let queryParameters = {}
   const domain = parameters.$domain ? parameters.$domain : getDomain()
-  let path = '/unified-identity-server/api/users/{id}/reset-password'
+  let path = '/unified-identity/api/users/{id}/reset-password'
   path = path.replace('{id}', `${parameters['id']}`)
   if (parameters.$queryParameters) {
     Object.keys(parameters.$queryParameters).forEach(function(parameterName) {
