@@ -110,12 +110,12 @@ const vueConfig = {
       '/oauth2': {
         target: process.env.VUE_APP_AUTHORIZATION_URI
       },
-      '/gateway': {
+      '/gateway-management/api': {
         target: url,
         ws: true,
         changeOrigin: true
       },
-      '/unified-identity': {
+      '/unified-identity/api': {
         target: url,
         ws: true,
         changeOrigin: true
