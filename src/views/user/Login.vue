@@ -150,6 +150,9 @@
           <a>
             <a-icon class="item-icon" type="weibo-circle"></a-icon>
           </a>
+          <a @click.prevent="unifiedIdentityLogin">
+            <a-icon class="item-icon" type="bank" theme="twoTone" />
+          </a>
           <router-link class="register" :to="{ name: 'register' }">注册账户</router-link>
         </div>
       </a-form>
@@ -169,7 +172,7 @@
 import TwoStepCaptcha from '@/components/tools/TwoStepCaptcha';
 import { mapActions } from 'vuex';
 import { timeFix } from '@/utils/util';
-import { getSmsCaptcha, get2step } from '@/api/login';
+import { getSmsCaptcha } from '@/api/login';
 import { clientAuthorize, loginByAuthorizationCode } from '@/api/auth';
 import storage from 'store';
 import { ACCESS_TOKEN } from '@/store/mutation-types';
@@ -201,23 +204,19 @@ export default {
     };
   },
   created() {
-    get2step({})
-      .then(res => {
-        this.requiredTwoStepCaptcha = res.result.stepCode;
-      })
-      .catch(() => {
-        this.requiredTwoStepCaptcha = false;
-      });
+    // get2step({})
+    //   .then(res => {
+    //     this.requiredTwoStepCaptcha = res.result.stepCode;
+    //   })
+    //   .catch(() => {
+    //     this.requiredTwoStepCaptcha = false;
+    //   });
     // this.requiredTwoStepCaptcha = true
   },
-    /**
-   * 如果是授权码模式登录, 自动进行跳转
+  /**
    * 如果是授权码模式登录成功回调, 自动获取token
    */
   mounted() {
-    if (this.authorizationGrantType !== 'authorization_code') {
-      return;
-    }
     if (this.$route.query.code) {
       this.loading = true;
       loginByAuthorizationCode(this.$route.query.code)
@@ -229,13 +228,13 @@ export default {
           this.$message.error('登录失败, 请联系管理员');
         })
         .finally(() => (this.loading = false));
-    } else {
-      storage.set('redirectUrl', this.$route.query.redirect);
-      clientAuthorize();
     }
   },
   methods: {
     ...mapActions(['Login', 'Logout']),
+    unifiedIdentityLogin() {
+      clientAuthorize();
+    },
     // handler
     handleUsernameOrEmail(rule, value, callback) {
       const { state } = this;
